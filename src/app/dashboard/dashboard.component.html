@@ -18,7 +18,8 @@
                 <tr *ngFor="let bus of buses">
                     <td>{{ bus.operatorName }}</td>
                     <td>{{ bus.busNumber }}</td>
-                    <td>{{ bus }}</td>
+                    <td>{{ bus.start }}</td>
+                    <td>{{ bus.departure }}</td>
                     <td>{{ bus.destination }}</td>
                     <td>{{ bus.cost | currency }}</td>
                     <td>{{ bus.seatsAvailable }}</td>
