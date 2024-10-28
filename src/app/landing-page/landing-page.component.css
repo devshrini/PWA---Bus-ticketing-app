@@ -1,0 +1,90 @@
+/* Main landing container */
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F5F5; /* Light Gray background */
+    background-image: url('/buspic.jfif'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    padding: 20px;
+    position: relative; /* Position for the card to sit above */
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: rgba(255, 255, 255, 0.9); /* White card with slight transparency */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Card positioned above the background */
+  }
+  
+  /* Header styling */
+  .card h1 {
+    color: #003366; /* Deep Blue for main header */
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #333333; /* Dark Charcoal for text */
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Button group styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .button-section h2 {
+    color: #003366; /* Deep Blue for section headers */
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #003366; /* Deep Blue for primary actions */
+    color: #FFFFFF;
+  }
+  
+  .btn-primary:hover {
+    background-color: #002244; /* Darker blue on hover */
+  }
+  
+  .btn-secondary {
+    background-color: #FFCC00; /* Bright Yellow for secondary actions */
+    color: #333333; /* Dark Charcoal text */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #FFDD44; /* Lighter yellow on hover */
+  }
+  
+  .btn-tertiary {
+    background-color: #009688; /* Teal for tertiary actions */
+    color: #FFFFFF;
+  }
+  
+  .btn-tertiary:hover {
+    background-color: #00796B; /* Darker teal on hover */
+  }
+  

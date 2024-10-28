@@ -1,0 +1,61 @@
+body {
+    background-color: #F5F5F5; /* Light Gray for overall background */
+    font-family: Arial, sans-serif; /* Font family for the page */
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Padding around the dashboard */
+}
+
+.card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    width: 100%; /* Full width for the card */
+    max-width: 800px; /* Max width for larger screens */
+}
+
+h2 {
+    color: #003366; /* Deep Blue for headers */
+    text-align: center; /* Center the header text */
+}
+
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Merge table borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    padding: 10px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #003366; /* Deep Blue background for table headers */
+    color: #FFCC00; /* Bright Yellow text for headers */
+}
+
+td {
+    background-color: #ffffff; /* White background for table cells */
+    color: #333333; /* Dark Charcoal text color */
+}
+
+.btn-book {
+    background-color: #FFCC00; /* Bright Yellow for the Book Now button */
+    color: #003366; /* Deep Blue text color for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-book:hover {
+    background-color: #009688; /* Teal on hover */
+    color: white; /* White text on hover */
+}

@@ -1,0 +1,15 @@
+<div *ngIf="bus">
+    <h2>Payment Details</h2>
+    <p><strong>Bus Operator:</strong> {{ bus.operatorName }}</p>
+    <p><strong>Bus Number:</strong> {{ bus.busNo }}</p>
+    <p><strong>Departure:</strong> {{ bus.departure }}</p>
+    <p><strong>Destination:</strong> {{ bus.destination }}</p>
+    <p><strong>Cost per Ticket:</strong> {{ bus.cost  }}</p>
+    <p><strong>Number of Tickets:</strong> {{ tickets }}</p>
+    <p><strong>Total Cost:</strong> {{ totalCost  }}</p>
+  
+    <button (click)="proceedToPayment()">Proceed to Payment</button>
+  </div>
+  <div *ngIf="!bus">
+    <p>No booking details available.</p>
+  </div>

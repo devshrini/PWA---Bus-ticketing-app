@@ -1,0 +1,70 @@
+.admin-dashboard-container {
+    background-color: #F0F4F8; /* Light background for the entire dashboard */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card {
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-bus-card {
+    background-color: #E0F7FA; /* Light Teal background for add bus card */
+    border-left: 5px solid #009688; /* Teal accent */
+}
+
+.current-buses-card {
+    background-color: #FFECBC; /* Light Yellow background for current buses card */
+    border-left: 5px solid #FFCC00; /* Yellow accent */
+}
+
+h1 {
+    color: #003366; /* Deep Blue for the main heading */
+}
+
+h2 {
+    color: #003366; /* Deep Blue for section headings */
+}
+
+button.btn-primary {
+    background-color: #003366; /* Deep Blue for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.btn-primary:hover {
+    background-color: #002244; /* Darker blue on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Space between header and table */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Border for table cells */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366; /* Deep Blue for table header background */
+    color: white; /* White text color for headers */
+}
+
+td {
+    color: #333333; /* Dark Charcoal for text */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}

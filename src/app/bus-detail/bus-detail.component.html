@@ -1,0 +1,20 @@
+<div *ngIf="bus" class="bus-details-container">
+    <h2 class="bus-title">Bus Details for {{ bus.operatorName }}</h2>
+    <div class="bus-info">
+      <p><strong>Bus Number:</strong> {{ bus.busNumber }}</p>
+      <p><strong>Start Location:</strong> {{ bus.start }}</p>
+      <p><strong>Departure Time:</strong> {{ bus.departure }}</p>
+      <p><strong>Destination:</strong> {{ bus.destination }}</p>
+      <p><strong>Cost per Ticket:</strong> {{ bus.cost | currency }}</p>
+      <p><strong>Seats Available:</strong> {{ bus.seatsAvailable }}</p>
+    </div>
+    
+    <label for="ticketQuantity"><strong>Number of Tickets:</strong></label>
+    <input id="ticketQuantity" type="number" [(ngModel)]="ticketQuantity" min="1" [max]="bus.seatsAvailable" class="ticket-input">
+    
+    <button (click)="confirmBooking()" class="confirm-button">Confirm Booking</button>
+  </div>
+  <div *ngIf="!bus" class="no-bus-message">
+    <p>Bus details not found.</p>
+  </div>
+  

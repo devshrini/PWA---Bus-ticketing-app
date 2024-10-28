@@ -1,0 +1,55 @@
+.bus-details-container {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Spacing inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 500px; /* Limit the width */
+    margin: 20px auto; /* Center align the container */
+  }
+  
+  .bus-title {
+    font-size: 24px; /* Title font size */
+    color: #333; /* Title color */
+    margin-bottom: 10px; /* Spacing below title */
+    text-align: center; /* Center align the title */
+  }
+  
+  .bus-info {
+    margin-bottom: 15px; /* Spacing below the bus info */
+  }
+  
+  .bus-info p {
+    font-size: 16px; /* Font size for bus info */
+    color: #555; /* Color for bus info */
+    margin: 5px 0; /* Spacing for each paragraph */
+  }
+  
+  .ticket-input {
+    width: 100%; /* Full width for input */
+    padding: 10px; /* Spacing inside input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 4px; /* Rounded corners for input */
+    margin-bottom: 15px; /* Spacing below input */
+  }
+  
+  .confirm-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Spacing inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .no-bus-message {
+    text-align: center; /* Center align no bus message */
+    font-size: 18px; /* Font size for no bus message */
+    color: #888; /* Color for no bus message */
+  }
+  

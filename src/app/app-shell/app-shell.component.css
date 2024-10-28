@@ -1,0 +1,73 @@
+/* Container styling */
+.app-shell-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6E6FA; /* Light Lavender background */
+    color: #333333; /* Dark Charcoal text */
+  }
+  
+  /* Loading animation styling */
+  .loading-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Bus animation */
+  .bus-icon {
+    width: 100px;
+    height: 50px;
+    background-color: #FFCC00; /* Bright Yellow bus */
+    border-radius: 10px;
+    position: relative;
+    animation: busMove 2s ease-in-out infinite;
+  }
+  
+  .bus-icon::before, .bus-icon::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    background-color: #003366; /* Deep Blue for wheels */
+    border-radius: 50%;
+  }
+  
+  .bus-icon::before {
+    left: 10px;
+  }
+  
+  .bus-icon::after {
+    right: 10px;
+  }
+  
+  /* Loading text styling */
+  .loading-text {
+    color: #333333; /* Dark Charcoal for readability */
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  
+  /* Keyframes for bus movement */
+  @keyframes busMove {
+    0% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  
+  /* Fade-in effect for loading animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

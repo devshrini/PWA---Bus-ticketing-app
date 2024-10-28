@@ -1,0 +1,64 @@
+body {
+    background-color: #F5F5F5; /* Light Gray for overall background */
+    font-family: Arial, sans-serif; /* Font family for the page */
+}
+
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Padding around the container */
+    background-color: #E0E0E0; /* Slightly darker gray for the exterior */
+}
+
+.card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    width: 100%; /* Full width for the card */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+h1 {
+    color: #003366; /* Deep Blue for headers */
+    text-align: center; /* Center the header text */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    color: #333333; /* Dark Charcoal for labels */
+    display: block; /* Labels above inputs */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input:focus {
+    border-color: #009688; /* Teal border on focus */
+    outline: none; /* Remove outline */
+}
+
+.btn-primary {
+    background-color: #003366; /* Deep Blue for the button */
+    color: #ffffff; /* White text for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width for the button */
+}
+
+.btn-primary:hover {
+    background-color: #009688; /* Teal on hover */
+}

@@ -1,0 +1,32 @@
+<div class="dashboard-container">
+    <div class="card">
+        <h2>Bus Information Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator Name</th>
+                    <th>Bus No</th>
+                    <th>Start</th>
+                    <th>Departure</th>
+                    <th>Destination</th>
+                    <th>Cost</th>
+                    <th>Seats Available</th>
+                    <th>Action</th> <!-- New column for the Book Now button -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let bus of buses">
+                    <td>{{ bus.operatorName }}</td>
+                    <td>{{ bus.busNumber }}</td>
+                    <td>{{ bus }}</td>
+                    <td>{{ bus.destination }}</td>
+                    <td>{{ bus.cost | currency }}</td>
+                    <td>{{ bus.seatsAvailable }}</td>
+                    <td>
+                        <button class="btn btn-book" (click)="bookNow(bus)">Book Now</button> <!-- Book Now button -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

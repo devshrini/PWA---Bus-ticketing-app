@@ -1,0 +1,46 @@
+<div class="admin-dashboard-container">
+    <h1>Admin Dashboard</h1>
+  
+    <div class="card add-bus-card">
+        <h2>Add New Bus</h2>
+        <form (ngSubmit)="addBus()">
+            <input type="text" [(ngModel)]="newBus.operatorName" name="operatorName" placeholder="Operator Name" required />
+            <input type="text" [(ngModel)]="newBus.busNumber" name="busNumber" placeholder="Bus Number" required />
+            <input type="text" [(ngModel)]="newBus.start" name="startDeparture" placeholder="Start Departure" required />
+            <input type="text" [(ngModel)]="newBus.departure" name="startDeparture" placeholder="Start Departure" required />
+
+            <input type="text" [(ngModel)]="newBus.destination" name="destination" placeholder="Destination" required />
+            <input type="number" [(ngModel)]="newBus.cost" name="cost" placeholder="Cost" required />
+            <input type="number" [(ngModel)]="newBus.seatsAvailable" name="seatsAvailable" placeholder="Seats Available" required />
+            <button type="submit" class="btn btn-primary">Add Bus</button>
+        </form>
+    </div>
+  
+    <div class="card current-buses-card">
+        <h2>Current Buses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator Name</th>
+                    <th>Bus Number</th>
+                    <th>Start</th>
+                    <th> Departure</th>
+                    <th>Destination</th>
+                    <th>Cost</th>
+                    <th>Seats Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let bus of buses">
+                    <td>{{ bus.operatorName }}</td>
+                    <td>{{ bus.busNumber }}</td>
+                    <td>{{ bus.start}}</td>
+                    <td>{{ bus.departure}}</td>
+                    <td>{{ bus.destination }}</td>
+                    <td>{{ bus.cost | currency }}</td>
+                    <td>{{ bus.seatsAvailable }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

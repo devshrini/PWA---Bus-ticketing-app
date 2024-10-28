@@ -1,0 +1,72 @@
+.login-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0; /* Light gray background for the entire page */
+}
+
+.card {
+    background-color: #ffffff; /* White background for the card */
+    padding: 30px; /* Spacing inside the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for the card */
+}
+
+.login-title {
+    font-size: 24px; /* Title font size */
+    color: #333; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space below each form group */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+    font-size: 14px; /* Font size for labels */
+    color: #555; /* Color for labels */
+}
+
+.form-input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Spacing inside input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size for inputs */
+}
+
+.login-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Spacing inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size for button */
+    width: 100%; /* Full width for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-bottom: 10px; /* Space below the button */
+}
+
+.secondary-button {
+    background-color: #6c757d; /* Bootstrap secondary color */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.secondary-button:hover {
+    background-color: #5a6268; /* Darker gray on hover for secondary button */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center the error message */
+    margin-top: 10px; /* Space above the error message */
+}
